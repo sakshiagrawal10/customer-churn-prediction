@@ -31,62 +31,53 @@ Predicting churn helps companies take proactive actions to retain customers and 
 - Matplotlib and Seaborn for data visualization
 - Streamlit for deploying the web application
 
----
-
 ## Project Structure
-customer_churn_prediction
-│
-├── data
+```
+customer_churn_prediction/
+├── data/
 │ └── churn.csv
-│
-├── models
+├── models/
 │ ├── churn_model.pkl
 │ └── model_columns.pkl
-│
-├── src
+├── src/
 │ ├── data_preprocessing.py
 │ ├── train_model.py
 │ └── predict.py
-│
-├── app
+├── app/
 │ └── streamlit_app.py
-│
-├── notebooks
+├── notebooks/
 │ └── churn_analysis.ipynb
-│
 ├── requirements.txt
-│
 └── README.md
 
-
----
+```
 
 ## Installation
 
 ### 1 Clone the repository
 
-
+```
 git clone https://github.com/your-username/customer_churn_prediction.git
 
-
+```
 ### 2 Navigate to the project folder
 
-
+```
 cd customer_churn_prediction
-
+```
 
 ### 3 Install required libraries
 
-
+```
 pip install -r requirements.txt
-
+```
 
 Or install manually:
 
-
+```
 pip install pandas numpy scikit-learn matplotlib seaborn streamlit
 
-
+```
 ---
 
 ## Dataset
@@ -160,21 +151,21 @@ Confusion matrix visualization helps analyze prediction performance and understa
 
 ### 1 Train the model
 
-
+```
 python src/train_model.py
-
+```
 
 ### 2 Run prediction script
 
-
+```
 python src/predict.py
 
-
+```
 ### 3 Run Streamlit Web App
 
-
+```
 streamlit run app/streamlit_app.py
-
+```
 
 After running the command, open the **local URL displayed in the terminal** (usually `http://localhost:8501`) in your browser.
 
@@ -204,4 +195,4 @@ The web application built using Streamlit allows users to enter customer details
 
 ## Conclusion
 
-This project demonstrates how machine learning can be used to analyze customer behavior and pr
+This project demonstrates how machine learning can be used to analyze customer behavior and predict churn. Predictive models like this can help organizations identify high-risk customers and implement targeted retention strategies, ultimately improving customer loyalty and business performance.
