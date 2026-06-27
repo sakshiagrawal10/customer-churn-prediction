@@ -23,7 +23,8 @@ dependents = st.selectbox("Dependents", ["Yes", "No"])
 tenure = st.number_input("Tenure", min_value=0)
 
 monthly_charges = st.number_input("Monthly Charges", min_value=0.0)
-total_charges = st.number_input("Total Charges", min_value=0.0)
+total_charges = tenure * monthly_charges
+st.write(f"Calculated Total Charges: {total_charges:.2f}")
 
 if st.button("Predict"):
 
